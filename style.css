@@ -7,5 +7,5 @@
 body {
     grid-template-columns: 1920px;
     grid-template-rows: 1080px;
-    font-family: quicksand;
+    font-family: quicksand, sans-serif;
 }
