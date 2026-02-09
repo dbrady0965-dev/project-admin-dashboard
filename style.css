@@ -6,17 +6,28 @@
 
 body {
     display: grid;
-    grid-template-columns: 1920px;
-    grid-template-rows: 1080px;
+    grid-template-columns: 3;
+    grid-template-rows: 2;
+    grid-gap: 15px;
     font-family: quicksand, sans-serif;
 }
 
 .sidebar {
     grid-area: 1 / 1 / 2 / 1;
+    
 }
 
 .header {
     display:inline-flex;
     grid-area: 1 / 2 / 1 / 2;
     justify-content: space-between;
+}
+
+.your-projects {
+    
+    grid-area: 2 / 2 / 2 / 2;
+}
+
+.announcements {
+    grid-area: 2 / 3 / 2 / 3;
 }
