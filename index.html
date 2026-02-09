@@ -51,38 +51,21 @@
         </div>
 
         <div class="header-button">
-            <button id="open-editor-btn">New</button>
-        
-        <!-- The Text Editor Modal (hidden by default) -->
-        <div id="editor-modal" class="modal">
-            <div class="modal-content">
-                <span class="close-btn">&times;</span>
-                <h2>Enter Tile Content</h2>
-                <!-- Using a textarea for multi-line text input -->
-                <textarea id="tile-input" rows="5" placeholder="Type your tile content here..."></textarea>
-                <button id="save-tile-btn">Save Tile</button>
-            </div>
-        </div>
-
-        <!-- Area where tiles will be displayed -->
-        <div id="tiles-container" class="tiles-container">
-            <!-- Dynamically created tiles will go here -->
-        </div>
-    </div>
-
-        <form action="/upload_endpoint" method="post" enctype="multipart/form-data">
-    <label for="file-upload">Choose a file:</label>
-    <input type="file" id="file-upload" name="uploaded_file">
-    <input type="submit" value="Upload">
-</form>
-
-    <button id="shareButton">Share this page</button>
-<p class="result"></p>
+            <button type="button" onclick="window.location.href='new_project_page.html'">
+            Create a New Project
+            </button>
+            <!-- Still need to write js code for this, 0507 feb 9 2026-->
 
 
-    </div>
-    
-        
+            <form action="/upload_endpoint" method="post" enctype="multipart/form-data">
+            <label for="file-upload">Choose a file:</label>
+            <input type="file" id="file-upload" name="uploaded_file">
+            <input type="submit" value="Upload">
+            </form>
+
+            <button id="shareButton">Share this page</button>
+            <p class="result"></p>
+        </div>      
     </section>
 </body>
 </html>
