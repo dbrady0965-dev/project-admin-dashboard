@@ -1,3 +1,17 @@
+const fileInput = document.getElementById('file-upload');
+const label = document.querySelector('label[for="file-upload"]');
+
+fileInput.addEventListener('change', function() {
+    if (this.files && this.files[0]) {
+        // Update the label text with the selected file name
+        label.textContent = this.files[0].name;
+    } else {
+        label.textContent = 'Choose File';
+    }
+});
+
+
+
 const shareButton = document.getElementById('shareButton');
 const resultPara = document.querySelector('.result');
 
