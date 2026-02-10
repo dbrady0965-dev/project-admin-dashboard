@@ -33,3 +33,16 @@ shareButton.addEventListener('click', async () => {
     // You could implement custom share buttons here
   }
 });
+// may not be required//
+const searchContainer = document.querySelector('.search-container');
+const searchInput = document.querySelector('.search-input');
+const searchButton = document.querySelector('.search-button');
+
+searchButton.addEventListener('click', () => {
+  searchContainer.classList.toggle('active');
+  if (searchContainer.classList.contains('active')) {
+    searchInput.focus(); // Focus the input when it expands
+  } else {
+    searchInput.value = ''; // Clear value when collapsing
+  }
+});
