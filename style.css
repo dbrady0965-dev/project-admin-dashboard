@@ -93,3 +93,8 @@ body {
   outline: none; /* Removes the default input focus outline */
   font-size: 16px;
 }
+
+.mag {
+    height: 15px;
+    width: 15px;
+}
