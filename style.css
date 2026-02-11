@@ -107,6 +107,7 @@ body {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
+    grid-gap: 15px;
 }
 
 .header-search {
@@ -181,6 +182,12 @@ body {
 .your-projects {
     
     grid-area: 2 / 2 / 2 / 2;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 15px;
+    width: 700px;
+    height:700px;
 }
 
 .announcements {
