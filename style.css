@@ -190,6 +190,29 @@ body {
     height:700px;
 }
 
+.project-tile {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 15px;
+    width: 700px;
+    height:700px;
+    justify-content: center;
+}
+.tile {
+
+  border: 1px solid black;
+  /* Optional: centers content within each item */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px; 
+  grid-area: auto;
+  border-radius: 10px;
+  box-shadow: black;
+}
+
 .announcements {
     grid-area: 2fr / 3fr / 2fr / 3fr;
     width: 300px;
