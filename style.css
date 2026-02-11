@@ -103,3 +103,9 @@ body {
     height: 20px;
     width: 20px;
 }
+
+.home-icon {
+    height: 25px;
+    width: 25px;
+    display: inline;
+}
