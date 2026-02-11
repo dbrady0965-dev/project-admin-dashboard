@@ -38,6 +38,62 @@ body {
     align-items: center;
 }
 
+.profile-icon {
+    height: 24px;
+    width: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.message-icon{
+    height: 24px;
+    width: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.history-icon {
+    height: 24px;
+    width: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.task-icon {
+    height: 24px;
+    width: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.comm-icon {
+    height: 24px;
+    width: 24px;
+    display: flex;
+    align-items: center;
+    padding-right: 51px;
+}
+
+.settings-icon {
+    height: 24px;
+    width: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.support-icon {
+    height: 24px;
+    width: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.privacy-icon {
+    height: 24px;
+    width: 24px;
+    display: flex;
+    align-items: center;
+}
 
 .side-tit {
     text-align: center;
