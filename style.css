@@ -168,9 +168,19 @@ body {
 }
 
 .header-welcome {
-    grid-area: 2 / 1 / 2 / 2;
+    grid-area: 2 / 2 / 3 / 2;
     display: inline-block;
+    flex-wrap: wrap;
     
+}
+
+.welcome-profile {
+    grid-area: 2 / 1 / 2 / 1;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    margin-top: 30px;
+    margin-left: 30px;
 }
 
 .header-button {
