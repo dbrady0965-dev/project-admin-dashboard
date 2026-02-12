@@ -193,12 +193,12 @@ body {
     max-height: 45px;
 }
 
-.your-projects {
+.main-content {
     
     grid-area: 2 / 2 / 2 / 2;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     gap: 15px;
     width: 700px;
     height:700px;
@@ -208,7 +208,7 @@ body {
 .project-tile {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     gap: 15px;
     width: 700px;
     height:700px;
@@ -230,13 +230,13 @@ body {
 }
 
 .announcements {
-    grid-area: 2fr / 3fr / 2fr / 3fr;
+    grid-area: 1 / 2 / 1 / 2;
     width: 300px;
     height:400px;
 }
 
 .trending {
-    grid-area: 3 / 3 / 3 / 3;
+    grid-area: 2 / 2 / 2 / 2;
     width: 300px;
     height: 250px;
 }
