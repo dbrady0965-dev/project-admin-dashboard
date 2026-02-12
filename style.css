@@ -6,16 +6,21 @@
 
 body {
     display: grid;
-    grid-template-columns: minmax(300px,300px);
-    grid-template-rows: auto;
+    grid-template-columns: repeat(2, 0fr);
+    grid-template-rows: repeat(2, 0.3fr);
     grid-gap: 15px;
     font-family: quicksand, sans-serif;
 }
 
 .sidebar {
-    grid-area: 1 / 1 / 4 / 1;
+    grid-column: 1;
+    grid-row: span 2;    
     background-color: #2AB7F7; 
-    display: flex;   
+      
+    width: 400px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
 }
 
 .nav-list {
@@ -23,11 +28,23 @@ body {
     padding-bottom: 25px;
     text-align: center;
     list-style-type: none;
-    display: flex;
+   
     align-items: center;
     flex-wrap: wrap;
     flex-basis: 160px;
     flex-grow: 1;
+}
+
+.side-title {
+    grid-area: 1 / 1 / 1 / 1;
+}
+
+.user-nav {
+    grid-area: 2 / 1 / 2 / 1;
+}
+
+.support-nav {
+    grid-area: 3 / 1 / 3 / 1;
 }
 
 
@@ -102,22 +119,24 @@ body {
 
 .header {
     display: flex;
-    grid-area: 1 / 2 / 1 / 4;
+    grid-area: 1 / 2 / 1 / 2;
     justify-content: space-between;
     display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     grid-gap: 15px;
+    max-height: 75px;
 }
 
 .header-search {
-    grid-area: 1 / 1 / 1 / 3;
+    grid-area: 1 / 1 / 1 / 2;
     display: flex; /* Aligns the icon and input field */
   align-items: center;
   border: 1px solid #ccc;
   border-radius: 25px; /* Optional: adds rounded corners */
   padding-left: 10px; /* Space for the icon */
   width: 400px; /* Makes the bar 'long' */
+  height: 30px;
 }
 
 .search-input {
@@ -164,17 +183,19 @@ body {
 }
 
 .user-notice {
-     grid-area: 1 / 4 / 1 / 4;
+     grid-area: 1 / 2 / 1 / 2;
     display: inline-flex;
-    align-items: center;
-    padding-left: 450px;
+    
+   
     
 }
 
 .header-welcome {
-    grid-area: 2 / 2 / 3 / 2;
+    grid-area: 2 / 1 / 2 / 1;
     display: inline-block;
     flex-wrap: wrap;
+    padding-left: 125px;
+   
     
 }
 
@@ -188,7 +209,7 @@ body {
 }
 
 .header-button {
-    grid-area: 2 / 4 / 2 / 4;
+    grid-area: 2 / 2 / 2 / 2;
     display: inline-flex;
     max-height: 45px;
 }
@@ -197,7 +218,7 @@ body {
     
     grid-area: 2 / 2 / 2 / 2;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 15px;
     width: 700px;
@@ -232,13 +253,20 @@ body {
 .announcements {
     grid-area: 1 / 2 / 1 / 2;
     width: 300px;
-    height:400px;
+    height:500px;
+    border: solid 1.5px black;
+    border-radius: 10px;
+    place-items: center;
 }
 
 .trending {
     grid-area: 2 / 2 / 2 / 2;
     width: 300px;
-    height: 250px;
+    height: 180px;
+    margin-top: 15px;
+    
+    border: solid 1.5px black;
+    border-radius: 10px;
 }
 
 
