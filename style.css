@@ -8,7 +8,7 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 0fr);
     grid-template-rows: repeat(2, 0.3fr);
-    grid-gap: 15px;
+    
     font-family: quicksand, sans-serif;
 }
 
@@ -224,7 +224,15 @@ body {
     gap: 15px;
     width: 700px;
     height:700px;
+    
+}
+
+.content-background {
+    width: 1020px;
+    height: 920px;
+    align-self: center;
     background-color: lightgray;
+    box-shadow: 5px 5px 5px gray inset;
 }
 
 .project-tile {
@@ -232,10 +240,12 @@ body {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 15px;
-    width: 700px;
-    height:700px;
+    width: 600px;
+    height:600px;
     justify-content: center;
     align-content: center;
+    padding: 15px;
+    padding-top: 150px;
 }
 .tile {
 
@@ -249,6 +259,11 @@ body {
   grid-area: auto;
   border-radius: 10px;
   box-shadow: black;
+  box-shadow: 1px 1px 1px grey;
+}
+
+.announce-trend {
+    padding-top: 150px;
 }
 
 .announcements {
@@ -258,6 +273,7 @@ body {
     border: solid 1.5px black;
     border-radius: 10px;
     place-items: center;
+    box-shadow: 1px 1px 1px grey;
 }
 
 .trending {
@@ -268,6 +284,7 @@ body {
     
     border: solid 1.5px black;
     border-radius: 10px;
+    box-shadow: 1px 1px 1px grey;
 }
 
 
