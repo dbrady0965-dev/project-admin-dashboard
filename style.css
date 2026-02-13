@@ -125,7 +125,8 @@ body {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-gap: 15px;
-    max-height: 75px;
+    width: 1010px;
+    
 }
 
 .header-search {
